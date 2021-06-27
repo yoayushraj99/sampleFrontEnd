@@ -53,7 +53,7 @@ const Compose = (props) => {
     };
 
     axios
-      .post('http://localhost:8082/api/mails', data)
+      .post('https://lipr-backend.herokuapp.com/api/mails', data)
       .then((res) => {
         setMail({
           ...initialValue,

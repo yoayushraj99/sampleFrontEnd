@@ -12,7 +12,7 @@ class ShowmailsList extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8082/api/mails')
+      .get('https://lipr-backend.herokuapp.com/api/mails')
       .then((res) => {
         this.setState({
           mails: res.data,
